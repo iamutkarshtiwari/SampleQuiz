@@ -31,7 +31,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/question1title"
+                    android:text="@string/question1_label"
                     style="@style/questionTitle"/>
 
                 <TextView
@@ -45,14 +45,14 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <CheckBox
-                        android:id="@+id/checkboxQuest1AnswerMario"
+                        android:id="@+id/answer_raphael"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/answerMario"/>
+                        android:text="@string/answerRaphael"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -60,7 +60,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <CheckBox
-                        android:id="@+id/checkboxQuest1AnswerDonkey"
+                        android:id="@+id/answer_leonardo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         />
@@ -68,7 +68,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/answerDonkeyKong"/>
+                        android:text="@string/answerLeonardo"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -76,7 +76,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <CheckBox
-                        android:id="@+id/checkboxQuest1AnswerPortal"
+                        android:id="@+id/answer_michael"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         />
@@ -84,13 +84,13 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/answerPortal"/>
+                        android:text="@string/answerMichael"/>
                 </LinearLayout>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/question2title"
+                    android:text="@string/question2_label"
                     style="@style/questionTitle"/>
 
                 <TextView
@@ -103,24 +103,24 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
-                    <RadioButton android:id="@+id/radio_1979"
+                    <RadioButton android:id="@+id/radio_bruce"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/answer1979"/>
-                    <RadioButton android:id="@+id/radio_1989"
+                        android:text="@string/answerBruce"/>
+                    <RadioButton android:id="@+id/radio_jackie"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/answer1989"/>
-                    <RadioButton android:id="@+id/radio_1999"
+                        android:text="@string/answerJackie"/>
+                    <RadioButton android:id="@+id/radio_jet"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/answer1999"/>
+                        android:text="@string/answerJet"/>
                 </RadioGroup>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/question3title"
+                    android:text="@string/question3_label"
                     style="@style/questionTitle"/>
 
                 <TextView
@@ -130,10 +130,10 @@
                     style="@style/questionAndAnswers"/>
 
                 <EditText
-                    android:id="@+id/answerInputUserLastName"
+                    android:id="@+id/answerInput"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/LastNameLaraHint"
+                    android:hint="@string/nameHintDrake"
                     android:inputType="text"
                     android:maxLength="10"/>
 
@@ -141,7 +141,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/question4title"
+                    android:text="@string/question4_label"
                     style="@style/questionTitle"/>
 
                 <TextView
@@ -154,25 +154,25 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
-                    <RadioButton android:id="@+id/radio_bioShock"
+                    <RadioButton android:id="@+id/radio_2005"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/answerBioShock"/>
-                    <RadioButton android:id="@+id/radio_borderlands"
+                        android:text="@string/answer2005"/>
+                    <RadioButton android:id="@+id/radio_2006"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/answerBorderlands"/>
-                    <RadioButton android:id="@+id/radio_portal"
+                        android:text="@string/answer2006"/>
+                    <RadioButton android:id="@+id/radio_2007"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/answerPortal"/>
+                        android:text="@string/answer2007"/>
                 </RadioGroup>
 
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/question5title"
+                    android:text="@string/question5_label"
                     style="@style/questionTitle"/>
 
                 <TextView
@@ -186,7 +186,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <CheckBox
-                        android:id="@+id/checkboxQuest5GameBoy"
+                        android:id="@+id/answer_rubeus"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         />
@@ -194,7 +194,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/answerGameBoy"/>
+                        android:text="@string/answerRubeus"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -202,14 +202,14 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <CheckBox
-                        android:id="@+id/checkboxQuestPSP"
+                        android:id="@+id/answer_neville"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/answerPSP"/>
+                        android:text="@string/answerNeville"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -217,14 +217,14 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <CheckBox
-                        android:id="@+id/checkboxQuest5Wii"
+                        android:id="@+id/answer_peter"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/answerWii"/>
+                        android:text="@string/answerPeter"/>
                 </LinearLayout>
 
                 <Button

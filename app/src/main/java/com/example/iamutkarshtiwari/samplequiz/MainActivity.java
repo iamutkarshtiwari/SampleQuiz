@@ -28,14 +28,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * Question 1 evaluation
      */
     private void checkQuestionOneAnswers(){
-        CheckBox questionOneMario = (CheckBox) findViewById(R.id.checkboxQuest1AnswerMario);
-        CheckBox questionOneDonkey = (CheckBox) findViewById(R.id.checkboxQuest1AnswerDonkey);
-        CheckBox questionOnePortal = (CheckBox) findViewById(R.id.checkboxQuest1AnswerPortal);
-        boolean isQuestionOneMarioChecked = questionOneMario.isChecked();
-        boolean isQuestionOneDonkeyChecked = questionOneDonkey.isChecked();
-        boolean isQuestionOnePortalChecked = questionOnePortal.isChecked();
+        CheckBox answer1 = (CheckBox) findViewById(R.id.answer_raphael);
+        CheckBox answer2 = (CheckBox) findViewById(R.id.answer_leonardo);
+        CheckBox answer3 = (CheckBox) findViewById(R.id.answer_michael);
+        boolean answer1Checked = answer1.isChecked();
+        boolean answer2Checked = answer2.isChecked();
+        boolean answer3Checked = answer3.isChecked();
 
-        if (isQuestionOneMarioChecked && isQuestionOneDonkeyChecked && !isQuestionOnePortalChecked){
+        if (!answer1Checked && !answer2Checked && answer3Checked){
             correctAnswers += 1;
         }
     }
@@ -44,9 +44,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * Question 2 evaluation
      */
     private void checkQuestionTwoAnswers(){
-        RadioButton radioButton1989 = (RadioButton) findViewById(R.id.radio_1989);
-        boolean isQuestionTwo1989Checked = radioButton1989.isChecked();
-        if (isQuestionTwo1989Checked){
+        RadioButton radioButtonBruce = (RadioButton) findViewById(R.id.radio_bruce);
+        boolean isRadioButtonBruceChecked = radioButtonBruce.isChecked();
+        if (isRadioButtonBruceChecked){
             correctAnswers += 1;
         }
     }
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * @return
      */
     private String getQuestionThreeUserInput() {
-        EditText userInputLastName = (EditText) findViewById(R.id.answerInputUserLastName);
+        EditText userInputLastName = (EditText) findViewById(R.id.answerInput);
         String name = userInputLastName.getText().toString();
         return name;
     }
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      */
     private void checkQuestionThreeAnswer(){
         String name = getQuestionThreeUserInput();
-        if (name.trim().equalsIgnoreCase("croft")){
+        if (name.trim().equalsIgnoreCase("drake")){
             correctAnswers += 1;
         }
     }
@@ -75,9 +75,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * Question 4 evaluation
      */
     private void checkQuestionFourAnswers(){
-        RadioButton radioButtonPortal = (RadioButton) findViewById(R.id.radio_portal);
-        boolean isQuestionTwoPortalChecked = radioButtonPortal.isChecked();
-        if (isQuestionTwoPortalChecked){
+        RadioButton radioButton2007 = (RadioButton) findViewById(R.id.radio_2007);
+        boolean isRadioButton2007Checked = radioButton2007.isChecked();
+        if (isRadioButton2007Checked){
             correctAnswers += 1;
         }
     }
@@ -86,14 +86,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * Question 5 evaluation
      */
     private void checkQuestionFiveAnswers(){
-        CheckBox questionFiveGameBoy = (CheckBox) findViewById(R.id.checkboxQuest5GameBoy);
-        CheckBox questionFivePSP = (CheckBox) findViewById(R.id.checkboxQuestPSP);
-        CheckBox questionFiveWii = (CheckBox) findViewById(R.id.checkboxQuest5Wii);
-        boolean isQuestionFiveGameBoyChecked = questionFiveGameBoy.isChecked();
-        boolean isQuestionFivePSPChecked = questionFivePSP.isChecked();
-        boolean isQuestionFiveWiiChecked = questionFiveWii.isChecked();
+        CheckBox answerNeville = (CheckBox) findViewById(R.id.answer_neville);
+        CheckBox answerRubeus = (CheckBox) findViewById(R.id.answer_rubeus);
+        CheckBox answerPeter = (CheckBox) findViewById(R.id.answer_peter);
+        boolean isAnswerNevilleChecked = answerNeville.isChecked();
+        boolean isAnswerRubeusChecked = answerRubeus.isChecked();
+        boolean isAnswerPeterChecked = answerPeter.isChecked();
 
-        if (isQuestionFiveGameBoyChecked && !isQuestionFivePSPChecked && isQuestionFiveWiiChecked){
+        if (isAnswerNevilleChecked && isAnswerRubeusChecked && !isAnswerPeterChecked){
             correctAnswers += 1;
         }
     }
@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     /**
      * Check all questions one by one
      */
-    private void checkAllQuestions(){
+    private void checkAll(){
         checkQuestionOneAnswers();
         checkQuestionTwoAnswers();
         checkQuestionThreeAnswer();
@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         int id = view.getId();
         if (id == R.id.submitButton) {
-            checkAllQuestions();
+            checkAll();
             Toast.makeText(MainActivity.this, getStringFromID(R.string.correct_answer) + correctAnswers + getStringFromID(R.string.by_5),
                     Toast.LENGTH_LONG).show();
             resetCounterCorrectAnswers();}
