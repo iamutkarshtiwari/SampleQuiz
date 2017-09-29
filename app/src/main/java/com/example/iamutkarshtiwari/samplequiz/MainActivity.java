@@ -37,6 +37,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (!answer1Checked && !answer2Checked && answer3Checked){
             correctAnswers += 1;
+        } else {
+        	correctAnswers += 0;
         }
     }
 
@@ -48,6 +50,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         boolean isRadioButtonBruceChecked = radioButtonBruce.isChecked();
         if (isRadioButtonBruceChecked){
             correctAnswers += 1;
+        } else {
+        	correctAnswers += 0;
         }
     }
 
@@ -68,6 +72,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String name = getQuestionThreeUserInput();
         if (name.trim().equalsIgnoreCase("drake")){
             correctAnswers += 1;
+        } else {
+        	correctAnswers += 0;
         }
     }
 
@@ -79,6 +85,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         boolean isRadioButton2007Checked = radioButton2007.isChecked();
         if (isRadioButton2007Checked){
             correctAnswers += 1;
+        } else {
+        	correctAnswers += 0;
         }
     }
 
@@ -95,6 +103,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (isAnswerNevilleChecked && isAnswerRubeusChecked && !isAnswerPeterChecked){
             correctAnswers += 1;
+        } else {
+        	correctAnswers += 0;
         }
     }
 
