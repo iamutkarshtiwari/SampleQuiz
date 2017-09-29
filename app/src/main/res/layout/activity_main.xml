@@ -45,7 +45,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <CheckBox
-                        android:id="@+id/answer_raphael"
+                        android:id="@+id/cb_answer_raphael"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
@@ -60,7 +60,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <CheckBox
-                        android:id="@+id/answer_leonardo"
+                        android:id="@+id/cb_answer_leonardo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         />
@@ -76,7 +76,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <CheckBox
-                        android:id="@+id/answer_michael"
+                        android:id="@+id/cb_answer_michael"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         />
@@ -186,7 +186,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <CheckBox
-                        android:id="@+id/answer_rubeus"
+                        android:id="@+id/cb_answer_rubeus"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         />
@@ -202,7 +202,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <CheckBox
-                        android:id="@+id/answer_neville"
+                        android:id="@+id/cb_answer_neville"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
@@ -217,7 +217,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <CheckBox
-                        android:id="@+id/answer_peter"
+                        android:id="@+id/cb_answer_peter"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
@@ -228,7 +228,7 @@
                 </LinearLayout>
 
                 <Button
-                    android:id="@+id/submitButton"
+                    android:id="@+id/submit_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/submit"

@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        submit = (Button) findViewById(R.id.submitButton);
+        submit = (Button) findViewById(R.id.submit_button);
         submit.setOnClickListener(this);
     }
 
@@ -28,9 +28,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * Question 1 evaluation
      */
     private void checkQuestionOneAnswers(){
-        CheckBox answer1 = (CheckBox) findViewById(R.id.answer_raphael);
-        CheckBox answer2 = (CheckBox) findViewById(R.id.answer_leonardo);
-        CheckBox answer3 = (CheckBox) findViewById(R.id.answer_michael);
+        CheckBox answer1 = (CheckBox) findViewById(R.id.cb_answer_raphael);
+        CheckBox answer2 = (CheckBox) findViewById(R.id.cb_answer_leonardo);
+        CheckBox answer3 = (CheckBox) findViewById(R.id.cb_answer_michael);
         boolean answer1Checked = answer1.isChecked();
         boolean answer2Checked = answer2.isChecked();
         boolean answer3Checked = answer3.isChecked();
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (!answer1Checked && !answer2Checked && answer3Checked){
             correctAnswers += 1;
         } else {
-        	correctAnswers += 0;
+            correctAnswers += 0;
         }
     }
 
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (isRadioButtonBruceChecked){
             correctAnswers += 1;
         } else {
-        	correctAnswers += 0;
+            correctAnswers += 0;
         }
     }
 
@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (name.trim().equalsIgnoreCase("drake")){
             correctAnswers += 1;
         } else {
-        	correctAnswers += 0;
+            correctAnswers += 0;
         }
     }
 
@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (isRadioButton2007Checked){
             correctAnswers += 1;
         } else {
-        	correctAnswers += 0;
+            correctAnswers += 0;
         }
     }
 
@@ -94,9 +94,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * Question 5 evaluation
      */
     private void checkQuestionFiveAnswers(){
-        CheckBox answerNeville = (CheckBox) findViewById(R.id.answer_neville);
-        CheckBox answerRubeus = (CheckBox) findViewById(R.id.answer_rubeus);
-        CheckBox answerPeter = (CheckBox) findViewById(R.id.answer_peter);
+        CheckBox answerNeville = (CheckBox) findViewById(R.id.cb_answer_neville);
+        CheckBox answerRubeus = (CheckBox) findViewById(R.id.cb_answer_rubeus);
+        CheckBox answerPeter = (CheckBox) findViewById(R.id.cb_answer_peter);
         boolean isAnswerNevilleChecked = answerNeville.isChecked();
         boolean isAnswerRubeusChecked = answerRubeus.isChecked();
         boolean isAnswerPeterChecked = answerPeter.isChecked();
@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (isAnswerNevilleChecked && isAnswerRubeusChecked && !isAnswerPeterChecked){
             correctAnswers += 1;
         } else {
-        	correctAnswers += 0;
+            correctAnswers += 0;
         }
     }
 
@@ -133,12 +133,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         int id = view.getId();
-        if (id == R.id.submitButton) {
+        if (id == R.id.submit_button) {
             checkAll();
             Toast.makeText(MainActivity.this, getStringFromID(R.string.correct_answer) + correctAnswers + getStringFromID(R.string.by_5),
                     Toast.LENGTH_LONG).show();
-            resetCounterCorrectAnswers();}
-
+            resetCounterCorrectAnswers();
+        }
     }
 
     /**
